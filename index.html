@@ -43,13 +43,61 @@
         nav a:hover {
             color: #FFD700;
         }
-        .content {
+        .hero {
+            background: linear-gradient(135deg, #6A11CB, #2575FC);
+            color: white;
             text-align: center;
             padding: 4rem 2rem;
         }
-        .content h1 {
-            font-size: 2rem;
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .hero button {
+            background-color: #FFD700;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            font-weight: bold;
             color: #003366;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .hero button:hover {
+            background-color: #FFC107;
+        }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+            background: #f9f9f9;
+            text-align: center;
+        }
+        .services .card {
+            padding: 1.5rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .services .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+        .services .card h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.4rem;
+            color: #003366;
+        }
+        .services .card p {
+            font-size: 1rem;
+            color: #555;
         }
         footer {
             background: #003366;
@@ -77,13 +125,28 @@
             <a href="kontakt.html">Kontakt</a>
         </nav>
     </header>
-    <div class="content">
-        <h1>Úvodní stránka</h1>
-    </div>
+    <section class="hero">
+        <h1>Vítejte na AULK Vzdělávání</h1>
+        <p>Vaše cesta k úspěchu začíná zde. Nabízíme kurzy, školení a individuální poradenství.</p>
+        <button>Zjistit více</button>
+    </section>
+    <section class="services">
+        <div class="card">
+            <h3>Termíny školení</h3>
+            <p>Zjistěte dostupné termíny našich kurzů.</p>
+        </div>
+        <div class="card">
+            <h3>Pro firmy</h3>
+            <p>Školení a poradenství přímo na míru vašim potřebám.</p>
+        </div>
+        <div class="card">
+            <h3>eKnihy</h3>
+            <p>Rozšiřte své znalosti prostřednictvím naší knihovny.</p>
+        </div>
+    </section>
     <footer>
         <p>&copy; 2024 AULK Vzdělávání. Všechna práva vyhrazena.</p>
     </footer>
 </body>
 </html>
-
 
