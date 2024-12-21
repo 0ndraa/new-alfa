@@ -5,111 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AULK Vzdělávání</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Poppins', sans-serif;
-            color: #333;
-            background: #ffffff;
-            line-height: 1.6;
-            margin: 0;
-        }
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 2rem;
-            background: #003366;
-            color: white;
-        }
-        header .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-        nav {
-            display: flex;
-            gap: 1.5rem;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: 600;
-            transition: color 0.3s ease;
-        }
-        nav a:hover {
-            color: #FFD700;
-        }
-        .hero {
-            background: linear-gradient(135deg, #6A11CB, #2575FC);
-            color: white;
-            text-align: center;
-            padding: 4rem 2rem;
-        }
-        .hero h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-        }
-        .hero button {
-            background-color: #FFD700;
-            border: none;
-            padding: 0.75rem 1.5rem;
-            font-size: 1rem;
-            font-weight: bold;
-            color: #003366;
-            border-radius: 25px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        .hero button:hover {
-            background-color: #FFC107;
-        }
-        .services {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            padding: 2rem;
-            background: #f9f9f9;
-            text-align: center;
-        }
-        .services .card {
-            padding: 1.5rem;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .services .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-        }
-        .services .card h3 {
-            margin-bottom: 0.5rem;
-            font-size: 1.4rem;
-            color: #003366;
-        }
-        .services .card p {
-            font-size: 1rem;
-            color: #555;
-        }
-        footer {
-            background: #003366;
-            color: white;
-            text-align: center;
-            padding: 1rem 2rem;
-            margin-top: 2rem;
-        }
-        footer p {
-            font-size: 0.9rem;
-        }
-    </style>
+    <link rel="stylesheet" href="style-main-new.css">
 </head>
 <body>
     <header>
@@ -126,22 +22,31 @@
         </nav>
     </header>
     <section class="hero">
-        <h1>Vítejte na AULK Vzdělávání</h1>
-        <p>Vaše cesta k úspěchu začíná zde. Nabízíme kurzy, školení a individuální poradenství.</p>
-        <button>Zjistit více</button>
+        <div class="text">
+            <h1>Vzdělávání na míru pro každého</h1>
+            <p>Objevte širokou škálu kurzů, které vám pomohou dosáhnout vašich cílů.</p>
+            <div class="buttons">
+                <button>Začněte nyní</button>
+                <button>Více informací</button>
+            </div>
+        </div>
+        <img src="https://via.placeholder.com/400x300" alt="Ilustrace vzdělávání">
     </section>
     <section class="services">
-        <div class="card">
-            <h3>Termíny školení</h3>
-            <p>Zjistěte dostupné termíny našich kurzů.</p>
-        </div>
-        <div class="card">
-            <h3>Pro firmy</h3>
-            <p>Školení a poradenství přímo na míru vašim potřebám.</p>
-        </div>
-        <div class="card">
-            <h3>eKnihy</h3>
-            <p>Rozšiřte své znalosti prostřednictvím naší knihovny.</p>
+        <h2>Naše služby</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Kurzy na míru</h3>
+                <p>Přizpůsobené vašim potřebám a požadavkům.</p>
+            </div>
+            <div class="card">
+                <h3>Poradenství</h3>
+                <p>Individuální přístup k vašim profesním výzvám.</p>
+            </div>
+            <div class="card">
+                <h3>eKnihy</h3>
+                <p>Rozšiřte své znalosti kdykoli a kdekoli.</p>
+            </div>
         </div>
     </section>
     <footer>
