@@ -42,14 +42,15 @@ nav a:hover {
 /* Hero section styles */
 .hero {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     padding: 4rem 2rem;
     background: linear-gradient(135deg, #d39bc2, #a15e8a);
     color: white;
 }
 .hero .text {
-    max-width: 50%;
+    max-width: 100%;
+    margin-bottom: 2rem;
 }
 .hero h1 {
     font-size: 2.5rem;
@@ -78,7 +79,7 @@ nav a:hover {
     background-color: #FFC107;
 }
 .hero img {
-    max-width: 40%;
+    max-width: 100%;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
