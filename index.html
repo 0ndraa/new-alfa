@@ -4,8 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alfa Universum L.K.</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style-main-new.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #cb3489;
+            color: #fff;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: 700;
+        }
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+            background-color: #fbe5f1;
+        }
+        .hero h1 {
+            color: #cb3489;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .buttons button {
+            background-color: #cb3489;
+            color: #fff;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            margin: 0.5rem;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: 700;
+        }
+        .services {
+            padding: 2rem;
+            background-color: #fff;
+        }
+        .services h2 {
+            text-align: center;
+            color: #cb3489;
+            margin-bottom: 1.5rem;
+        }
+        .services .cards {
+            display: flex;
+            justify-content: space-around;
+            gap: 1rem;
+        }
+        .card {
+            background-color: #fbe5f1;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            flex: 1;
+        }
+        .card h3 {
+            color: #cb3489;
+            margin-bottom: 1rem;
+        }
+        .card p {
+            color: #555;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #cb3489;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -22,30 +109,27 @@
         </nav>
     </header>
     <section class="hero">
-        <div class="text">
-            <h1>Začátek nekonečných možností</h1>
-            <p>Objevte širokou škálu kurzů, které vám pomohou dosáhnout vašich cílů.</p>
-            <div class="buttons">
-                <button>Začněte nyní</button>
-                <button>Více informací</button>
-            </div>
+        <h1>Osobní a profesní růst</h1>
+        <p>Rozvíjejte své schopnosti a získejte nové dovednosti pro úspěšnou budoucnost.</p>
+        <div class="buttons">
+            <button>Začněte nyní</button>
+            <button>Zjistit více</button>
         </div>
-        <img src="https://via.placeholder.com/400x300" alt="Ilustrace vzdělávání">
     </section>
     <section class="services">
         <h2>Naše služby</h2>
         <div class="cards">
             <div class="card">
                 <h3>Kurzy na míru</h3>
-                <p>Přizpůsobené vašim potřebám a požadavkům.</p>
+                <p>Široká nabídka kurzů přizpůsobených vašim potřebám.</p>
             </div>
             <div class="card">
                 <h3>Poradenství</h3>
-                <p>Individuální přístup k vašim profesním výzvám.</p>
+                <p>Individuální přístup pro vaši profesní cestu.</p>
             </div>
             <div class="card">
                 <h3>eKnihy</h3>
-                <p>Rozšiřte své znalosti kdykoli a kdekoli.</p>
+                <p>Moderní studijní materiály k dispozici kdykoli.</p>
             </div>
         </div>
     </section>
